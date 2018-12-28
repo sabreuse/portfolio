@@ -1,12 +1,16 @@
+.article-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1.75rem 1.5rem;
+}
 .article-box {
-  margin-bottom: 1.5em;
   padding: 2em;
-  box-shadow: 0px 0px 6px grey;
+  box-shadow: 0px 0px 2px grey;
 }
 .title {
-  font-size: 1.5em;
-  color: grey;
-  margin-bottom: 0px;
+  font-size: 1.75rem;
+  color: #666;
+  margin-bottom: 3px;
 }
 .author,
 .date {

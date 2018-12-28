@@ -9,12 +9,16 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
+    <p>
+      This is a space for me to play with new technologies. Some of them will
+      turn into larger experiments; some will probably always just be proofs of
+      concept. Either way, enjoy exploring!
+    </p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
       <Image />
     </div>
-    <div>
+    <div className="article-container">
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id} className="article-box">
           <h3 className="title">
@@ -33,7 +37,6 @@ const IndexPage = ({ data }) => (
         </div>
       ))}
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
